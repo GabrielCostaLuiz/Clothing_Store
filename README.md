@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-commerce Project README
 
-## Getting Started
+Bem-vindo ao nosso E-commerce! Este projeto oferece uma plataforma completa com funcionalidades de administração e loja, permitindo a gestão eficiente de produtos, coleções, vendas e clientes. 
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto foi desenvolvido utilizando as seguintes ferramentas e tecnologias:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js:** Um framework de React que permite a construção de aplicações web modernas e eficientes.
+- **Clerk:** Uma plataforma de autenticação que simplifica o gerenciamento de usuários e permissões.
+- **Cloudinary:** Um serviço de hospedagem de imagens que oferece recursos avançados de manipulação de mídia.
+- **Stripe:** Uma plataforma de pagamentos online que oferece soluções seguras e flexíveis.
+- **MongoDB:** Um banco de dados NoSQL altamente escalável e flexível, ideal para aplicações web modernas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades de Admin
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### CRUD de Produtos
+- **Adicionar:** Crie novos produtos com facilidade, definindo detalhes como nome, descrição, preço e imagens.
+- **Excluir:** Remova produtos que não estão mais em estoque ou que não são mais relevantes para sua loja.
+- **Editar:** Atualize informações de produtos existentes para manter sua loja sempre atualizada.
+- **Atualizar:** Mantenha o estoque e os preços dos produtos atualizados para refletir as mudanças no seu catálogo.
 
-## Learn More
+### CRUD de Coleções
+- **Criar:** Organize produtos relacionados em coleções temáticas para facilitar a navegação dos clientes.
+- **Adicionar Produtos:** Associe produtos às coleções correspondentes para uma experiência de compra mais personalizada.
 
-To learn more about Next.js, take a look at the following resources:
+### Dashboard de Vendas
+- Visualize dados importantes sobre as vendas da sua loja, incluindo gráficos e métricas relevantes para o seu negócio.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Aba de Pedidos
+- Acesse informações detalhadas sobre os pedidos concluídos, incluindo dados do cliente, endereço de entrega e produtos adquiridos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Aba de Clientes
+- Obtenha informações de contato dos clientes para facilitar a comunicação e oferecer suporte personalizado.
 
-## Deploy on Vercel
+## Funcionalidades da Loja
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Página Inicial
+- Explore coleções temáticas e produtos em destaque para uma experiência de compra envolvente.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Wishlist
+- Guarde seus produtos favoritos para uma compra futura conveniente.
+
+### Histórico de Pedidos
+- Acompanhe facilmente os pedidos anteriores e o status de entrega.
+
+### Barra de Busca
+- Encontre rapidamente produtos específicos usando a funcionalidade de busca.
+
+### Carrinho de Compras
+- Adicione produtos ao carrinho e conclua a compra de forma rápida e segura.
+
+### Processamento de Pagamento pelo Stripe
+- Finalize as compras de forma segura e confiável usando a integração com o Stripe.
+
