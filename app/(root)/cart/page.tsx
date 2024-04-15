@@ -17,6 +17,7 @@ const Cart = () => {
     0
   );
   const totalRounded = parseFloat(total.toFixed(2));
+  
 
   const customer = {
     clerkId: user?.id,
@@ -70,25 +71,25 @@ const Cart = () => {
                     {cartItem.size && (
                       <p className="text-small-medium">{cartItem.size}</p>
                     )}
-                    <p className="text-small-medium">${cartItem.item.price}</p>
+                    <p className="text-small-medium">R${cartItem.item.price}</p>
                   </div>
                 </div>
 
                 <div className="flex gap-4 items-center">
                   <MinusCircle
                     className="hover:text-red-1 cursor-pointer"
-                    onClick={() => cart.decreaseQuantity(cartItem.item._id)}
+                    onClick={() => cart.decreaseQuantity(cartItem.item._id, cartItem.color, cartItem.size)}
                   />
                   <p className="text-body-bold">{cartItem.quantity}</p>
                   <PlusCircle
                     className="hover:text-red-1 cursor-pointer"
-                    onClick={() => cart.increaseQuantity(cartItem.item._id)}
+                    onClick={() => cart.increaseQuantity(cartItem.item._id, cartItem.color, cartItem.size)}
                   />
                 </div>
 
                 <Trash
                   className="hover:text-red-1 cursor-pointer"
-                  onClick={() => cart.removeItem(cartItem.item._id)}
+                  onClick={() => cart.removeItem(cartItem.item._id, cartItem.color, cartItem.size)}
                 />
               </div>
             ))}
