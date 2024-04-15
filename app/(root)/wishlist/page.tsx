@@ -67,7 +67,7 @@ const Wishlist = () => {
   if(errorMessage) return (
 <div className="px-10 py-5">
       <p className="text-heading3-bold my-10">Sua lista de desejos</p>
-      <p>{errorMessage}</p>
+      <p><b>{errorMessage}</b></p>
     </div>
 
   );
