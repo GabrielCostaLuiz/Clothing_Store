@@ -1,4 +1,4 @@
-# E-commerce Project README
+# E-commerce Clothing
 
 Bem-vindo ao nosso E-commerce! Este projeto oferece uma plataforma completa com funcionalidades de administração e loja, permitindo a gestão eficiente de produtos, coleções, vendas e clientes. 
 
